@@ -1,0 +1,15 @@
+{
+  "name": "espera",
+  "version": "0.1.0",
+  "description": "Sistema de estatísticas baseado em rastreios dos Correios",
+  "main": "index.js",
+  "author": "Felipe Coury <felipe.coury@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.2",
+    "dotenv": "5.0.1",
+    "express": "4.16.3",
+    "request": "2.85.0",
+    "request-promise": "4.2.2"
+  }
+}
