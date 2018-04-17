@@ -2,7 +2,7 @@
   "name": "espera",
   "version": "0.1.0",
   "description": "Sistema de estatísticas baseado em rastreios dos Correios",
-  "main": "index.js",
+  "main": "bin/server.js",
   "author": "Felipe Coury <felipe.coury@gmail.com>",
   "license": "MIT",
   "dependencies": {
