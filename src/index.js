@@ -32,7 +32,14 @@ class Server {
         });
         const details = data[0].split(/\s\s+/g);
         rows.push({
-          status: data[1],
+          status: data[1]
+            .replace('��', 'çã')
+            .replace('hor�rio', 'horário')
+            .replace('pr�ximo', 'próximo')
+            .replace('�til', 'útil')
+            .replace('ap�s', 'após')
+            .replace('Ag�ncia', 'Agência')
+            .replace(/\s+/g, ' '),
           date: details[0],
           time: details[1],
           location: details[2],
