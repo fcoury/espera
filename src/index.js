@@ -27,6 +27,11 @@ class Server {
   track(req, res) {
     const { code } = req.params;
     correios.track(code).then(events => {
+      if (!events.length) {
+        return res.status(404).json({ error: 'Tracking não encontrado' });
+      }
+
+
       models.Tracking
         .findOrCreate({ where: { code } })
         .spread((tracking, created) => {
